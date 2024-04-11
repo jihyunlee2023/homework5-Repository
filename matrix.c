@@ -17,13 +17,15 @@ void free_matrix(int **matrix, int row);
 
 
 int main() {
+
+    printf("[----- [Your Name]  [Student ID] -----]\n");
     //행렬의 크기와 행렬 포인터 변수 선언
     int row1, column1, row2, column2; 
     int **matrix1, **matrix2, **result; 
     int i, j;
 
     srand(time(NULL));  //난수 초기화
-    printf("Enter the number of rows and columns of matrix A: "); //행렬 A의 크기 입력
+    printf("\nEnter the number of rows and columns of matrix A: "); //행렬 A의 크기 입력
     scanf("%d %d", &row1, &column1);
     printf("Enter the number of rows and columns of matrix B: "); //행렬 B의 크기 입력
     scanf("%d %d", &row2, &column2); 
